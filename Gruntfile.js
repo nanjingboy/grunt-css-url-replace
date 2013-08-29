@@ -30,20 +30,12 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     css_url_replace: {
-      default_options: {
+      task: {
         options: {
+          staticRoot: 'test/fixtures'
         },
         files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123'],
-        },
-      },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!',
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123'],
+          'tmp/replaced_url.css': ['test/fixtures/test1.css', 'test/fixtures/test2.css'],
         },
       },
     },
