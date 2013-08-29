@@ -7,6 +7,7 @@
  */
 
 'use strict';
+var Replace = require('../lib/replace');
 
 module.exports = function(grunt) {
 
@@ -16,8 +17,9 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('css_url_replace', 'Grunt task to replace css urls with absolute path', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      punctuation: '',
+      separator: '\n',
+      staticRoot: 'public'
     });
 
     // Iterate over all specified file groups.
@@ -32,8 +34,8 @@ module.exports = function(grunt) {
           return true;
         }
       }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
+        // Read file source and replace relative url with absolute ones.
+        return new Replace(filepath, options.staticRoot).run();
       }).join(grunt.util.normalizelf(options.separator));
 
       // Handle options.
