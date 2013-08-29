@@ -17,8 +17,6 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('css_url_replace', 'Grunt task to replace css urls with absolute path', function() {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '',
-      separator: '\n',
       staticRoot: 'public'
     });
 
@@ -36,10 +34,7 @@ module.exports = function(grunt) {
       }).map(function(filepath) {
         // Read file source and replace relative url with absolute ones.
         return new Replace(filepath, options.staticRoot).run();
-      }).join(grunt.util.normalizelf(options.separator));
-
-      // Handle options.
-      src += options.punctuation;
+      }).join('\n');
 
       // Write the destination file.
       grunt.file.write(f.dest, src);
