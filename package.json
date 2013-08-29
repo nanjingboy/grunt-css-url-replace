@@ -10,12 +10,7 @@
     }
   ],
   "dependencies": {
-    "underscore": "1.4.x",
     "grunt": "~0.4.1"
-  },
-  "devDependencies": {
-    "mocha": "*",
-    "should": "*"
   },
   "keys": [
     "grunt",
