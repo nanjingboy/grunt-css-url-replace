@@ -76,6 +76,8 @@ public
 >- [MIT](https://github.com/NanJingBoy/grunt-css-url-replace/blob/master/LICENSE-MIT)
 
 ## Release History
+_2013-09-05   v0.1.3   Fixed parser error when when url is like images/demo.png_
+
 _2013-09-05   v0.1.1   Fixed parser error when has more then 2 urls in one line content_
 
 _2013-08-29   v0.1.0   Release the first version_
