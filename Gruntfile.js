@@ -35,7 +35,11 @@ module.exports = function(grunt) {
           staticRoot: 'test/fixtures'
         },
         files: {
-          'tmp/replaced_url.css': ['test/fixtures/test1.css', 'test/fixtures/test2.css'],
+          'tmp/replaced_url.css': [
+              'test/fixtures/test1.css',
+              'test/fixtures/test2.css',
+              'test/fixtures/test3.css'
+          ],
         },
       },
     },
