@@ -56,27 +56,35 @@ public
 #### css/application.css
 ```css
   .baner{background-image:url("../images/baner.png");}
+  .baner{background-image:url("../images/baner.png#test");}
 ```
 
 #### css/users/default.css
 ```css
   .avatar{background-image:url("../../images/avatar.png");}
+  .avatar{background-image:url("../../images/avatar.png?name=test");}
 ```
 
 #### the generated file dest/build.css is would be:
 ```css
   .baner{background-image:url("/images/baner.png");}
+  .baner{background-image:url("/images/baner.png#test");}
   .avatar{background-image:url("/images/avatar.png");}
+  .avatar{background-image:url("/images/avatar.png?name=test");}
 ```
 
 ## Contributors
 >- [superbug](https://github.com/superbug)
+>- [andersjanmyr](https://github.com/andersjanmyr)
 
 ## License
 >- [MIT](https://github.com/NanJingBoy/grunt-css-url-replace/blob/master/LICENSE-MIT)
 
 ## Release History
-_2013-09-05   v0.1.3   Fixed parser error when when url is like images/demo.png_
+
+_2014-01-22   v0.1.5   Fixed parser error when url include hash and question mark values_
+
+_2013-09-05   v0.1.3   Fixed parser error when url is like images/demo.png_
 
 _2013-09-05   v0.1.1   Fixed parser error when has more then 2 urls in one line content_
 
