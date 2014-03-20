@@ -40,6 +40,10 @@ module.exports = function(grunt) {
               'test/fixtures/test2.css',
               'test/fixtures/test3.css'
           ],
+          'tmp/schema_urls.css': [
+            'test/fixtures/http_urls.css',
+            'test/fixtures/data_urls.css'
+          ]
         },
       },
     },
