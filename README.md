@@ -57,30 +57,38 @@ public
 ```css
   .baner{background-image:url("../images/baner.png");}
   .baner{background-image:url("../images/baner.png#test");}
+  .http { background-image: url("http://somehost.com/image.png"); }
+  .https_urls { background-image: url("https://somehost.com/image.png"); }
 ```
 
 #### css/users/default.css
 ```css
   .avatar{background-image:url("../../images/avatar.png");}
   .avatar{background-image:url("../../images/avatar.png?name=test");}
+  .data_urls { background-image: url('data:image/png:base64,0'); }
 ```
 
 #### the generated file dest/build.css is would be:
 ```css
   .baner{background-image:url("/images/baner.png");}
   .baner{background-image:url("/images/baner.png#test");}
+  .http { background-image: url("http://somehost.com/image.png"); }
+  .https_urls { background-image: url("https://somehost.com/image.png"); }
   .avatar{background-image:url("/images/avatar.png");}
   .avatar{background-image:url("/images/avatar.png?name=test");}
+  .data_urls { background-image: url('data:image/png:base64,0'); }
 ```
 
 ## Contributors
 >- [superbug](https://github.com/superbug)
 >- [andersjanmyr](https://github.com/andersjanmyr)
+>- [Nehle](https://github.com/Nehle)
 
 ## License
 >- [MIT](https://github.com/NanJingBoy/grunt-css-url-replace/blob/master/LICENSE-MIT)
 
 ## Release History
+_2014-05-29   v0.1.7   Fixed parser error for absolute url_
 
 _2014-01-22   v0.1.5   Fixed parser error when url include hash and question mark values_
 
