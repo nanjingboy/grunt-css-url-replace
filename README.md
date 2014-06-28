@@ -66,6 +66,7 @@ public
   .avatar{background-image:url("../../images/avatar.png");}
   .avatar{background-image:url("../../images/avatar.png?name=test");}
   .data_urls { background-image: url('data:image/png:base64,0'); }
+  .backslashes_urls { background-image: url('\images\e.png') }
 ```
 
 #### the generated file dest/build.css is would be:
@@ -76,7 +77,8 @@ public
   .https_urls { background-image: url("https://somehost.com/image.png"); }
   .avatar{background-image:url("/images/avatar.png");}
   .avatar{background-image:url("/images/avatar.png?name=test");}
-  .data_urls { background-image: url('data:image/png:base64,0'); }
+  .data_urls { background-image: url("data:image/png:base64,0"); }
+  .backslashes_urls { background-image: url("/images/e.png") }
 ```
 
 ## Contributors
@@ -85,9 +87,11 @@ public
 >- [Nehle](https://github.com/Nehle)
 
 ## License
->- [MIT](https://github.com/NanJingBoy/grunt-css-url-replace/blob/master/LICENSE-MIT)
+>- [MIT](https://github.com/nanjingboy/grunt-css-url-replace/blob/master/LICENSE-MIT)
 
 ## Release History
+_2014-06-28   v0.1.9   Fixed parser error for url with backslashes_
+
 _2014-05-29   v0.1.7   Fixed parser error for absolute url_
 
 _2014-01-22   v0.1.5   Fixed parser error when url include hash and question mark values_

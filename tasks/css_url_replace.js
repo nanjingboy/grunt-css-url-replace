@@ -1,8 +1,8 @@
 /*
  * grunt-css-url-replace
- * https://github.com/NanJingBoy/grunt-css-url-replace
+ * https://github.com/nanjingboy/grunt-css-url-replace
  *
- * Copyright (c) 2013 NanJingBoy
+ * Copyright (c) 2013 nanjingboy
  * Licensed under the MIT license.
  */
 

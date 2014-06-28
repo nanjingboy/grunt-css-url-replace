@@ -1,8 +1,8 @@
 /*
  * grunt-css-url-replace
- * https://github.com/NanJingBoy/grunt-css-url-replace
+ * https://github.com/nanjingboy/grunt-css-url-replace
  *
- * Copyright (c) 2013 NanJingBoy
+ * Copyright (c) 2013 nanjingboy
  * Licensed under the MIT license.
  */
 
@@ -36,13 +36,10 @@ module.exports = function(grunt) {
         },
         files: {
           'tmp/replaced_url.css': [
-              'test/fixtures/test1.css',
-              'test/fixtures/test2.css',
-              'test/fixtures/test3.css'
-          ],
-          'tmp/schema_urls.css': [
-            'test/fixtures/http_urls.css',
-            'test/fixtures/data_urls.css'
+            'test/fixtures/common.css',
+            'test/fixtures/with_hash_or_query_string.css',
+            'test/fixtures/absolute.css',
+            'test/fixtures/backslashes.css'
           ]
         },
       },
