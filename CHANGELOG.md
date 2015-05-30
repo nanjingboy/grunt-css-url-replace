@@ -1,3 +1,6 @@
+## 0.2.5 May 30, 2015
+* Upgrade grunt dependency version to 0.4.5.
+
 ## 0.2.3 November 02, 2014
 * Remove replace backslashes with slashes option and fix error on windows.
 
