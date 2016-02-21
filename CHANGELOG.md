@@ -1,3 +1,6 @@
+## 0.2.7 Feb 21, 2016
+* Update peerDependencies to support Grunt 1.0.
+
 ## 0.2.5 May 30, 2015
 * Upgrade grunt dependency version to 0.4.5.
 

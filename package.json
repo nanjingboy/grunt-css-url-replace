@@ -1,7 +1,7 @@
 {
   "name": "grunt-css-url-replace",
   "description": "Grunt task to replace css urls with absolute path",
-  "version": "0.2.5",
+  "version": "0.2.7",
   "homepage": "https://github.com/nanjingboy/grunt-css-url-replace",
   "author": {
     "name": "Tom.Huang",
